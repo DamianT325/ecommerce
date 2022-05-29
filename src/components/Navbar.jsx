@@ -1,8 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
 import Badge from "@mui/material/Badge";
+import { mobile, mobile2 } from "../responsive";
 
 const Navbar = () => {
   return (
@@ -34,6 +34,7 @@ const Navbar = () => {
 
 const MenuItem = styled.div`
   margin-left: 15px;
+  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
 const SearchContainer = styled.div`
@@ -48,11 +49,13 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border-style: none;
   outline: none;
+  ${mobile({ width: "50px" })}
 `;
 
 const Wrapper = styled.div`
   padding: 10px 20px;
   display: flex;
+  ${mobile({ padding: "10px 0px" })}
 
   justify-content: space-between;
 `;
@@ -61,12 +64,15 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  ${mobile({ display: "none" })}
+  ${mobile2({ display: "none" })}
 `;
 const Right = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 const Center = styled.div`
   flex: 1;
@@ -75,6 +81,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
+  ${mobile({ fontSize: "24px" })}
 `;
 
 const Container = styled.div`
@@ -85,6 +92,7 @@ const Container = styled.div`
 const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
+  ${mobile({ display: "none" })}
 `;
 
 export default Navbar;
