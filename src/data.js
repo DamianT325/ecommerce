@@ -47,7 +47,7 @@ export const popularProducts = [
   },
   {
     id: 2,
-    img: "http://cdn.shopify.com/s/files/1/0011/9783/4252/products/20_375a8763-f5d7-4184-a352-4523ef713733.jpg?v=1576267132",
+    img: "https://www.tuttu.pl/pol_pl_Sukienka-COSTA-CALMA-DRESS-40413_4.png",
   },
   {
     id: 3,
@@ -67,7 +67,7 @@ export const popularProducts = [
   },
   {
     id: 7,
-    img: "https://deichmann.scene7.com/asset/deichmann/US_01_400529_01?$rr_results$&defaultImage=default_obs",
+    img: "https://www.rayrose.com/content/images/thumbs/0001498_330-sandstorm-black-leather-standard-ballroom-dance-shoes.png",
   },
   {
     id: 8,
